@@ -67,7 +67,8 @@ public interface TokenHelper {
             "const",
             "enum",
             "goto",
-            "strictfp"
+            "strictfp",
+            "System"
     );
 
     List<String> keyOperators = Arrays.asList(

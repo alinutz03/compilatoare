@@ -33,12 +33,13 @@ public class TokenApplication {
             while (line != null) {
                 //System.out.println(line);
                 // read next line
+//                result.append(lexicalHelper.processLine(line, lineNumber));
                 result.append(lexicalHelper.processLine(line, lineNumber));
                 lineNumber++;
                 line = reader.readLine();
             }
-            if(lexicalHelper.isMultiLineComment()) {
-                throw new Exception("Multi line comment started at line " + lexicalHelper.isMultiLineComment()+ " in input file is unclosed");
+            if (lexicalHelper.isMultiLineComment()) {
+                throw new Exception("Multi line comment started at line " + lexicalHelper.isMultiLineComment() + " in input file is unclosed");
             }
             System.out.println(result);
 
@@ -46,5 +47,6 @@ public class TokenApplication {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
     }
 }
