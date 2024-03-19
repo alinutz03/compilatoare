@@ -27,21 +27,19 @@ public class TokenApplication {
             reader = new BufferedReader(new FileReader(fileName));
             String line = reader.readLine();
             TokenDelimiter lexicalHelper = new TokenDelimiter();
-            StringBuilder result = new StringBuilder();
+            StringBuilder outputResult = new StringBuilder();
             int lineNumber = 1;
 
             while (line != null) {
-                //System.out.println(line);
-                // read next line
-//                result.append(lexicalHelper.processLine(line, lineNumber));
-                result.append(lexicalHelper.processLine(line, lineNumber));
+                outputResult.append(lexicalHelper.processLine(line, lineNumber));
                 lineNumber++;
                 line = reader.readLine();
             }
             if (lexicalHelper.isMultiLineComment()) {
-                throw new Exception("Multi line comment started at line " + lexicalHelper.isMultiLineComment() + " in input file is unclosed");
+                throw new Exception("There is a multiline comment started at line  " + lexicalHelper.isMultiLineComment());
             }
-            System.out.println(result);
+            System.out.println(outputResult);
+
 
             reader.close();
         } catch (Exception e) {

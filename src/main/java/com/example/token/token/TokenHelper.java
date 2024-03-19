@@ -1,44 +1,51 @@
 package com.example.token.token;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
+import java.util.Arrays;
+
 
 public interface TokenHelper {
 
     List<String> keyWords= Arrays.asList(
-            "abstract",
             "ArrayList",
-            "args",
-            "boolean",
             "Boolean",
-            "byte",
+            "Integer",
+            "List",
+            "Long",
+            "Short",
+            "String",
+            "System",
+            "abstract",
+            "args",
+            "assert",
+            "boolean",
             "break",
-            "class",
+            "byte",
             "case",
             "catch",
             "char",
+            "class",
+            "const",
             "continue",
             "default",
             "do",
             "double",
             "else",
+            "enum",
             "extends",
             "final",
             "finally",
             "float",
             "for",
             "forEach",
+            "goto",
             "if",
             "implements",
             "import",
             "instanceof",
             "int",
-            "Integer",
             "interface",
             "long",
-            "Long",
-            "List",
             "main",
             "native",
             "new",
@@ -47,13 +54,12 @@ public interface TokenHelper {
             "protected",
             "public",
             "return",
-            "short",
-            "Short",
-            "static",
             "sealed",
+            "short",
+            "static",
+            "strictfp",
             "super",
             "switch",
-            "String",
             "synchronized",
             "this",
             "thro",
@@ -62,13 +68,7 @@ public interface TokenHelper {
             "try",
             "void",
             "volatile",
-            "while",
-            "assert",
-            "const",
-            "enum",
-            "goto",
-            "strictfp",
-            "System"
+            "while"
     );
 
     List<String> keyOperators = Arrays.asList(

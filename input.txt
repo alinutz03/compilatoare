@@ -2,8 +2,8 @@
 
 void main(){    /* bbb*b
        bb*/
-    int beta;     34.56..      demo
-    beta++  beta; # ^
+    int beta;    34.56..     demo
+    beta++  beta;  #
     A == b + 13.17
 
 
